@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="鍾昌興的繁體中文個人作品集，聚焦 Java 後端開發、企業系統整合與既有系統現代化。">
+  <title>鍾昌興｜Java 後端工程師・企業系統整合</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="主要導覽">
+      <a class="brand" href="#home" aria-label="回到首頁"><span class="brand-mark">C</span><span>CHANG-HSING CHUNG</span></a>
+      <button class="menu-toggle" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">關於我</a><a href="#skills">技術能力</a><a href="#projects">專案作品</a><a href="#architecture">架構圖</a><a href="#resume">履歷下載</a><a href="#contact" class="nav-cta">聯絡我</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse"></span> JAVA BACKEND · SYSTEM INTEGRATION</p>
+          <h1>把複雜的企業流程，<br><span class="gradient-text">整理成可靠的系統。</span></h1>
+          <p class="hero-lead">我是鍾昌興，專注 Java 後端開發、既有系統現代化與企業內部系統整合。從硬體研發到金融交易，再到零售營運系統，我重視系統穩定性、資料一致性與可維護性。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">探索專案 <span>↘</span></a>
+            <a class="button button-secondary" href="resume/鍾昌興_Java後端工程師履歷.docx" download>下載履歷 <span>↓</span></a>
+          </div>
+          <div class="hero-tags"><span>Java / Spring</span><span>API Integration</span><span>Legacy Modernization</span></div>
+        </div>
+        <div class="hero-visual" aria-label="系統架構抽象圖">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="visual-core"><span class="core-symbol">⌘</span><strong>Backend</strong><small>Reliable by design</small></div>
+          <div class="float-card card-a"><span class="mini-icon">API</span><div><b>API Gateway</b><small>Routing · IP Control</small></div></div>
+          <div class="float-card card-b"><span class="mini-icon mini-purple">DB</span><div><b>Business Services</b><small>Report · Permission · Surrounding</small></div></div>
+          <div class="float-card card-c"><span class="mini-icon mini-green">✓</span><div><b>Business Rules</b><small>Validation · Transactions</small></div></div>
+          <div class="visual-dots"></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>工程實作</span><i></i><span>系統整合</span><i></i><span>問題分析</span><i></i><span>穩定交付</span></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container two-col">
+        <div><p class="section-kicker">01 / ABOUT</p><h2>跨領域經驗，<br>落實在工程細節。</h2></div>
+        <div class="about-copy">
+          <p>具備 25 年以上工程相關經驗，曾投入硬體／晶片研發與技術管理，之後轉向 Java 後端及金融交易系統開發。這樣的跨領域背景，讓我習慣從需求、資料流、例外情境到維運風險，完整理解一項功能。</p>
+          <p>目前的作品方向聚焦百貨零售企業系統：報表與資產管理、周邊營運服務、銷售快報，以及 API Gateway 路由和來源 IP 管理。重視可追蹤的實作證據，也會清楚區分已完成、已測試與仍待外部環境驗證的功能。</p>
+          <div class="stat-row">
+            <div class="stat"><strong>25+</strong><span>年工程相關經驗</span></div>
+            <div class="stat"><strong>Java</strong><span>後端與系統整合</span></div>
+            <div class="stat"><strong>End-to-End</strong><span>從問題到驗證</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">02 / SKILLS</p><h2>技術能力</h2></div><p>以實際專案脈絡呈現技術，不以工具清單取代工程成果。</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">01</div><h3>Backend Development</h3><p>Java、Spring Boot、Spring MVC、REST API、Spring Data JPA、Maven 多模組專案。</p><div class="skill-line"><span style="width:88%"></span></div><small>服務層設計 · API 開發 · 除錯</small></article>
+          <article class="skill-card"><div class="skill-icon purple">02</div><h3>System Integration</h3><p>舊系統程式分析、SQL／資料流追蹤、ERP WebService、POS、會員點數及營運服務介接。</p><div class="skill-line"><span style="width:84%"></span></div><small>相容性維護 · 跨模組整合</small></article>
+          <article class="skill-card"><div class="skill-icon green">03</div><h3>Gateway & Governance</h3><p>Spring Cloud Gateway、動態路由管理、IP 白名單、來源 IP 足跡及登入失敗紀錄。</p><div class="skill-line"><span style="width:80%"></span></div><small>路由管理 · 存取追蹤</small></article>
+          <article class="skill-card"><div class="skill-icon orange">04</div><h3>Data & Business Workflow</h3><p>MySQL、SQL、交易管理、Excel 報表、資產盤點、預算檢核及審核流程。</p><div class="skill-line"><span style="width:82%"></span></div><small>資料一致性 · 業務規則</small></article>
+        </div>
+        <div class="tech-strip"><span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>Spring Cloud Gateway</span><span>JPA</span><span>MySQL</span><span>SQL</span><span>Maven</span><span>REST API</span><span>WebService</span><span>Excel Reports</span></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">03 / SELECTED WORK</p><h2>專案作品</h2></div><p>依專案責任與實際可說明的成果整理；外部環境尚未驗證的功能會明確標示。</p></div>
+        <div class="project-list">
+          <article class="project-card project-featured">
+            <div class="project-number">PROJECT 01</div><div class="project-content">
+              <div class="project-title-row"><h3>API Gateway｜動態路由與 IP 管理</h3><span class="status status-local">本機功能驗證</span></div>
+              <p>建立 Spring Cloud Gateway 管理層，處理新舊系統 API 轉發、路由持久化與重新載入，並提供 IP 白名單及來源追蹤功能。</p>
+              <ul><li>路由新增、查詢、刪除、啟用狀態切換及刷新</li><li>MySQL 持久化設定，檢查資料與路由快取同步</li><li>分析 WebFlux Reactive 流程與阻塞式 JPA 存取的執行緒隔離</li></ul>
+              <div class="project-tags"><span>Spring Cloud Gateway</span><span>WebFlux</span><span>JPA</span><span>MySQL</span></div>
+            </div><div class="project-aside"><span class="big-glyph">⇄</span><small>ROUTE<br>MANAGEMENT</small></div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">PROJECT 02</div><div class="project-content">
+              <div class="project-title-row"><h3>Report｜報表與企業內部流程</h3><span class="status">功能開發</span></div>
+              <p>涵蓋資產盤點、員工資產、預算管理、人事出勤、加班、銷售與會員消費分析。</p>
+              <ul><li>Service／Repository 分層與交易管理</li><li>Excel 產製、檔案下載與 UTF-8 檔名處理</li><li>預算完整性檢查、審核狀態及敏感報表下載紀錄</li></ul>
+              <div class="project-tags"><span>Spring</span><span>JPA</span><span>SQL</span><span>Excel</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">PROJECT 03</div><div class="project-content">
+              <div class="project-title-row"><h3>Surrounding｜零售周邊營運服務</h3><span class="status status-review">依模組驗證</span></div>
+              <p>分析與轉換 POS、發票、停車折抵、會員點數、APP、電子簽到等既有營運功能。</p>
+              <ul><li>依原有程式、SQL 與資料格式重建 API</li><li>追蹤跨模組資料讀寫及外部服務呼叫</li><li>區分本機邏輯測試與 ERP／支付等外部端到端驗證</li></ul>
+              <div class="project-tags"><span>Java</span><span>REST API</span><span>SQL</span><span>Integration</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">PROJECT 04</div><div class="project-content">
+              <div class="project-title-row"><h3>Permission｜Bi4Sales 銷售快報</h3><span class="status">修改與測試</span></div>
+              <p>進行既有 Java 銷售業績與報表模組環境建置、程式轉換、資料結構調整及除錯。</p>
+              <ul><li>建置 Bi4Sales 模組開發環境</li><li>修改銷售快報同步功能並進行測試</li><li>以既有資料流程與業務行為作為驗證依據</li></ul>
+              <div class="project-tags"><span>Java</span><span>Legacy System</span><span>Debugging</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section architecture-section" id="architecture">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">04 / ARCHITECTURE</p><h2>專案架構圖</h2></div><p>概念圖呈現目前整理出的模組責任與關係；實際部署拓樸依公司環境為準。</p></div>
+        <div class="architecture-frame">
+          <img src="assets/architecture.svg" alt="企業系統架構圖：使用者與前端經由 API Gateway 轉發至 Report、Surrounding、Permission、Member、Bonus 等業務模組，再連接 MySQL、既有系統與外部服務。">
+          <div class="architecture-legend"><span><i class="legend-dot dot-blue"></i> API／路由層</span><span><i class="legend-dot dot-purple"></i> 業務模組</span><span><i class="legend-dot dot-green"></i> 資料與外部整合</span></div>
+        </div>
+        <p class="architecture-note">說明：圖中為邏輯架構示意，不代表所有模組均已部署至正式環境；Kafka 等事件驅動方案屬評估方向，未列為已正式上線功能。</p>
+      </div>
+    </section>
+
+    <section class="section approach-section">
+      <div class="container">
+        <p class="section-kicker">05 / ENGINEERING APPROACH</p><h2>我的工程工作方式</h2>
+        <div class="approach-grid">
+          <div><span>01</span><h3>先理解既有系統</h3><p>從 Controller、Service、SQL、資料表與呼叫關係建立完整資料流。</p></div>
+          <div><span>02</span><h3>把責任切清楚</h3><p>區分路由、業務規則、資料存取與外部介接，降低修改風險。</p></div>
+          <div><span>03</span><h3>驗證而不誇大</h3><p>清楚區分程式完成、本機測試與外部端到端驗證，讓成果可追溯。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume-section" id="resume">
+      <div class="container resume-panel">
+        <div class="resume-copy"><p class="section-kicker">06 / RESUME</p><h2>讓履歷成為<br>下一次對話的起點。</h2><p>下載履歷摘要，快速了解我的 Java 後端、企業系統整合與既有系統現代化經驗。</p><div class="resume-actions"><a class="button button-light" href="resume/鍾昌興_Java後端工程師履歷.docx" download>下載 Word 履歷 <span>↓</span></a><a class="text-link" href="resume/鍾昌興_Java後端工程師履歷.md" download>下載 Markdown 版本 ↗</a></div></div>
+        <div class="resume-art"><div class="doc-sheet"><div class="doc-top"></div><div class="doc-name">鍾昌興</div><div class="doc-role">JAVA BACKEND ENGINEER</div><div class="doc-rule"></div><div class="doc-line long"></div><div class="doc-line"></div><div class="doc-line medium"></div><div class="doc-heading">PROJECT EXPERIENCE</div><div class="doc-line long"></div><div class="doc-line medium"></div><div class="doc-line long"></div><div class="doc-line short"></div><div class="doc-foot"><span>JAVA</span><span>SPRING</span><span>API</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div><p class="section-kicker">07 / CONTACT</p><h2>一起把問題<br><span class="gradient-text">變成可交付的系統。</span></h2><p class="contact-intro">歡迎洽談 Java 後端開發、系統整合、舊系統現代化及技術管理相關機會。</p></div>
+        <div class="contact-card"><div class="contact-row"><span class="contact-icon">✉</span><div><small>EMAIL</small><strong>請填入你的公開聯絡信箱</strong></div></div><div class="contact-row"><span class="contact-icon">in</span><div><small>LINKEDIN</small><strong>請填入 LinkedIn 個人頁面網址</strong></div></div><div class="contact-row"><span class="contact-icon">⌘</span><div><small>GITHUB</small><strong>請填入 GitHub 帳號網址</strong></div></div><p class="contact-hint">上線前請將以上三項替換成你願意公開的聯絡資訊。</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">C</span><span>CHANG-HSING CHUNG</span></a><span>© <span id="year"></span> 鍾昌興 · Java Backend & System Integration</span><a href="#home">回到頁首 ↑</a></div></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>

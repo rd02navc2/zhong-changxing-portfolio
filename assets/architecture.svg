@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+<title id="title">企業系統邏輯架構圖</title><desc id="desc">前端使用者透過 API Gateway 連接 Report、Surrounding、Permission、Member 和 Bonus 模組，並存取資料庫及既有外部系統。</desc>
+<defs><linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf2ff"/><stop offset="1" stop-color="#dfe7ff"/></linearGradient><linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3edff"/><stop offset="1" stop-color="#e8ddff"/></linearGradient><linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e4faf3"/><stop offset="1" stop-color="#d2f2e8"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#8b98b5"/></marker></defs>
+<rect width="1100" height="600" rx="20" fill="#fbfcff"/>
+<text x="48" y="43" font-family="Arial, sans-serif" font-size="12" letter-spacing="2" font-weight="700" fill="#7482a2">BEYOUNG · LOGICAL SYSTEM ARCHITECTURE</text>
+<rect x="390" y="67" width="320" height="66" rx="13" fill="url(#blue)" stroke="#8fa5ee" stroke-width="1.5"/>
+<text x="550" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#263b75">使用者／前端系統</text><text x="550" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6577aa">Web UI · API Client</text>
+<path d="M550 133 V170" stroke="#8b98b5" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<rect x="310" y="176" width="480" height="85" rx="15" fill="#101a30" stroke="#566ca7" stroke-width="1.5"/>
+<text x="550" y="207" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fff">Spring Cloud Gateway</text>
+<text x="550" y="231" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#c3cee8">API Routing · IP Allowlist · Route Refresh</text>
+<text x="550" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#93a7d8">MySQL route configuration · source IP tracking</text>
+<path d="M550 261 V290 H120 V320 M550 290 V320 M550 290 H980 V320" stroke="#8b98b5" stroke-width="1.8" fill="none"/>
+<path d="M120 320 V335 M335 320 V335 M550 320 V335 M765 320 V335 M980 320 V335" stroke="#8b98b5" stroke-width="1.8" marker-end="url(#arrow)" fill="none"/>
+<g font-family="Arial, sans-serif" text-anchor="middle">
+<rect x="35" y="340" width="170" height="95" rx="12" fill="url(#purple)" stroke="#b7a0e9"/><text x="120" y="372" font-size="15" font-weight="700" fill="#5c428b">Report</text><text x="120" y="394" font-size="11" fill="#766493">資產 · 預算 · 報表</text><text x="120" y="412" font-size="10" fill="#766493">Excel / Download</text>
+<rect x="250" y="340" width="170" height="95" rx="12" fill="url(#purple)" stroke="#b7a0e9"/><text x="335" y="372" font-size="15" font-weight="700" fill="#5c428b">Surrounding</text><text x="335" y="394" font-size="11" fill="#766493">POS · 發票 · 停車</text><text x="335" y="412" font-size="10" fill="#766493">營運 API 整合</text>
+<rect x="465" y="340" width="170" height="95" rx="12" fill="url(#purple)" stroke="#b7a0e9"/><text x="550" y="372" font-size="15" font-weight="700" fill="#5c428b">Permission</text><text x="550" y="394" font-size="11" fill="#766493">Bi4Sales</text><text x="550" y="412" font-size="10" fill="#766493">銷售快報同步</text>
+<rect x="680" y="340" width="170" height="95" rx="12" fill="url(#purple)" stroke="#b7a0e9"/><text x="765" y="372" font-size="15" font-weight="700" fill="#5c428b">Member</text><text x="765" y="394" font-size="11" fill="#766493">會員相關服務</text><text x="765" y="412" font-size="10" fill="#766493">依模組介接</text>
+<rect x="895" y="340" width="170" height="95" rx="12" fill="url(#purple)" stroke="#b7a0e9"/><text x="980" y="372" font-size="15" font-weight="700" fill="#5c428b">Bonus</text><text x="980" y="394" font-size="11" fill="#766493">紅利點數</text><text x="980" y="412" font-size="10" fill="#766493">ERP WebService</text>
+</g>
+<path d="M120 435 V465 H330 V490 M335 435 V465 H420 V490 M550 435 V490 M765 435 V465 H680 V490 M980 435 V465 H770 V490" stroke="#8b98b5" stroke-width="1.5" stroke-dasharray="5 5" fill="none" marker-end="url(#arrow)"/>
+<rect x="210" y="495" width="350" height="64" rx="12" fill="url(#green)" stroke="#80cfb9"/><text x="385" y="521" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#246b5b">MySQL／資料存取</text><text x="385" y="541" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4c897d">JPA · SQL · Transaction</text>
+<rect x="600" y="495" width="290" height="64" rx="12" fill="url(#green)" stroke="#80cfb9"/><text x="745" y="521" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#246b5b">既有／外部系統</text><text x="745" y="541" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4c897d">ERP · POS · 其他服務</text>
+<text x="550" y="584" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#929bb0">Logical view only · verify deployment and external integrations before publication</text>
+</svg>
