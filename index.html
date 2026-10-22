@@ -8,6 +8,16 @@
   <title>鍾昌興｜Java 後端工程師・企業系統整合</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+.refactor-section{background:var(--rf-page);color:var(--rf-ink);--rf-ink:#16202b;--rf-sub:#5a6673;--rf-page:#eef2f6;--rf-tile:#fff;--rf-line:#dbe3eb;--rf-brand:#1f3a5f;--rf-brand-soft:#e4ecf6;
+--rf-old:#b23a33;--rf-old-soft:#fbecea;--rf-new:#17714d;--rf-new-soft:#e5f4ec;--rf-code:#f2f5f8;--rf-hot:#b23a33}
+@media (prefers-color-scheme:dark){.refactor-section{--rf-ink:#e8edf2;--rf-sub:#9fabb7;--rf-page:#0f151c;--rf-tile:#18212b;--rf-line:#2a3541;--rf-brand:#9bbfee;--rf-brand-soft:#1d2b3d;
+--rf-old:#f19a93;--rf-old-soft:#2f1c1b;--rf-new:#82d6a9;--rf-new-soft:#15281f;--rf-code:#212c38;--rf-hot:#f19a93}}.refactor-section .rf-lead{color:var(--rf-sub);margin:0 0 26px;max-width:58ch;font-size:16px}.refactor-section .rf-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.refactor-section .rf-tile{background:var(--rf-tile);border:1px solid var(--rf-line);border-radius:16px;padding:20px 22px;min-width:0}.refactor-section .rf-s2{grid-column:span 2}.refactor-section .rf-s3{grid-column:span 3}.refactor-section .rf-s4{grid-column:span 4}.refactor-section .rf-s6{grid-column:span 6}.refactor-section .rf-stat{display:flex;flex-direction:column;justify-content:center;background:var(--rf-brand);border-color:var(--rf-brand)}.refactor-section .rf-stat b{font-size:40px;line-height:1.1;color:#fff}.refactor-section .rf-stat span{color:#d6e3f5;font-size:14px;margin-top:4px}
+@media (prefers-color-scheme:dark){.refactor-section .rf-stat b{color:#0f151c}.refactor-section .rf-stat span{color:#1d2b3d}}.refactor-section .rf-top{display:flex;align-items:center;gap:10px;margin-bottom:14px}.refactor-section .rf-num{width:30px;height:30px;border-radius:9px;background:var(--rf-brand-soft);color:var(--rf-brand);font-weight:700;display:grid;place-items:center;flex:none}.refactor-section .rf-top h2{font-size:18px;margin:0;flex:1}.refactor-section .rf-badge{font-size:12px;font-weight:600;padding:2px 10px;border-radius:99px;background:var(--rf-old-soft);color:var(--rf-hot);white-space:nowrap}.refactor-section .rf-badge.rf-g{background:var(--rf-new-soft);color:var(--rf-new)}.refactor-section .rf-ba{display:grid;gap:8px}.refactor-section .rf-ba.rf-row{grid-template-columns:1fr 1fr}.refactor-section .rf-box{border-radius:10px;padding:10px 12px;font-size:14px;min-width:0}.refactor-section .rf-box.rf-o{background:var(--rf-old-soft)}.refactor-section .rf-box.rf-n{background:var(--rf-new-soft)}.refactor-section .rf-tag{display:inline-block;font-size:12px;font-weight:700;margin-bottom:4px}.refactor-section .rf-o .rf-tag{color:var(--rf-old)}.refactor-section .rf-n .rf-tag{color:var(--rf-new)}.refactor-section code{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;background:var(--rf-code);padding:1px 6px;border-radius:5px;word-break:break-word}.refactor-section .rf-box code{background:rgba(127,127,127,.14)}.refactor-section .rf-box p{margin:4px 0 0}.refactor-section .rf-why{margin:12px 0 0;font-size:13.5px;color:var(--rf-sub)}.refactor-section .rf-split{display:flex;align-items:stretch;gap:14px;flex-wrap:wrap}.refactor-section .rf-big{flex:1 1 170px;border:2px dashed var(--rf-old);border-radius:12px;padding:14px;text-align:center;display:flex;flex-direction:column;justify-content:center;background:var(--rf-old-soft)}.refactor-section .rf-big b{font-size:22px;color:var(--rf-old)}.refactor-section .rf-arrow{align-self:center;font-size:26px;color:var(--rf-sub)}.refactor-section .rf-stack{flex:3 1 300px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.refactor-section .rf-layer{border-radius:12px;padding:12px;background:var(--rf-new-soft);font-size:13.5px;min-width:0}.refactor-section .rf-layer b{display:block;color:var(--rf-new);font-size:14px;word-break:break-word}.refactor-section .rf-layer span{display:block;color:var(--rf-sub);margin-top:2px}.refactor-section .rf-chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 12px}.refactor-section .rf-chips code{background:var(--rf-brand-soft);color:var(--rf-brand)}.refactor-section .rf-mini{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}.refactor-section .rf-mini div{background:var(--rf-code);border-radius:10px;padding:10px;font-size:13.5px;text-align:center}.refactor-section .rf-mini b{display:block;font-size:14px;color:var(--rf-brand)}.refactor-section .rf-n1{border-left:4px solid var(--rf-brand);background:var(--rf-code);border-radius:0 10px 10px 0;padding:10px 14px;font-size:14px}.refactor-section .rf-end{margin:22px 0 0;text-align:center;font-weight:600;color:var(--rf-brand);font-size:18px}
+@media (max-width:760px){.refactor-section .rf-grid{grid-template-columns:1fr}.refactor-section .rf-s2,.refactor-section .rf-s3,.refactor-section .rf-s4,.refactor-section .rf-s6{grid-column:auto}.refactor-section .rf-ba.rf-row{grid-template-columns:1fr}.refactor-section .rf-stack,.refactor-section .rf-mini{grid-template-columns:1fr 1fr}.refactor-section .rf-arrow{transform:rotate(90deg)}}
+
+.refactor-section{padding:72px 0}.refactor-section h2{color:var(--rf-ink)}.refactor-section .rf-lead{margin-top:8px}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -15,7 +25,7 @@
       <a class="brand" href="#home" aria-label="回到首頁"><span class="brand-mark">C</span><span>CHANG-HSING CHUNG</span></a>
       <button class="menu-toggle" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="#about">關於我</a><a href="#skills">技術能力</a><a href="#projects">專案作品</a><a href="#architecture">架構圖</a><a href="#resume">履歷下載</a><a href="#contact" class="nav-cta">聯絡我</a>
+        <a href="#about">關於我</a><a href="#skills">技術能力</a><a href="#projects">專案作品</a><a href="#refactoring">結構改進</a><a href="#architecture">架構圖</a><a href="#resume">履歷下載</a><a href="#contact" class="nav-cta">聯絡我</a>
       </div>
     </nav>
   </header>
@@ -113,9 +123,90 @@
       </div>
     </section>
 
+    <section class="section refactor-section" id="refactoring">
+      <div class="container">
+        <p class="section-kicker">04 / REFACTORING</p>
+        <h2>舊系統到 Spring Data JPA，<br>六項結構改進</h2>
+        <p class="rf-lead">把字串拼接與肥大的 DAO，改成可驗證、可維護的分層。每一格都看得到舊寫法、新寫法，以及為什麼要改。</p>
+
+  <div class="rf-grid">
+    <div class="rf-tile rf-stat rf-s2"><b>3 項</b><span>改進直接消除 SQL 注入風險（1、2、6）</span></div>
+    <div class="rf-tile rf-stat rf-s2"><b>1000+ 行</b><span>CatchDAO 拆成三層職責</span></div>
+    <div class="rf-tile rf-stat rf-s2"><b>6 個</b><span>Projection / DTO 取代整個 Entity</span></div>
+
+    <article class="rf-tile rf-s3">
+      <div class="rf-top"><div class="rf-num">1</div><h2>分頁現代化</h2><span class="rf-badge">防 SQL 注入</span></div>
+      <div class="rf-ba">
+        <div class="rf-box rf-o"><span class="rf-tag">舊</span><br><code>"order by ... limit " + iFrom + "," + iRecLimit</code><p>字串拼接，易被 SQL 注入。</p></div>
+        <div class="rf-box rf-n"><span class="rf-tag">新</span><br><code>Pageable pageable</code> + <code>Page&lt;T&gt; findXXX(...)</code><p>由框架處理分頁與總筆數，參數不再拼進 SQL。</p></div>
+      </div>
+    </article>
+
+    <article class="rf-tile rf-s3">
+      <div class="rf-top"><div class="rf-num">2</div><h2>SQL 注入防護</h2><span class="rf-badge">資安</span></div>
+      <div class="rf-ba">
+        <div class="rf-box rf-o"><span class="rf-tag">舊</span><br><code>_sbCond.append(" and tc_psa01 in ("+_sbCond.toString()+")")</code><p>條件直接拼接，易被 SQL 注入。</p></div>
+        <div class="rf-box rf-n"><span class="rf-tag">新</span>
+          <p><code>ObaRepositoryCustom</code> 用 <code>ALLOWED_SORT_COLUMNS</code> 白名單限制排序欄位。</p>
+          <p><code>CatchRepositoryImpl</code> 用 <code>NamedParameterJdbcTemplate</code> 綁定參數。</p></div>
+      </div>
+    </article>
+
+    <article class="rf-tile rf-s6">
+      <div class="rf-top"><div class="rf-num">3</div><h2>複雜查詢分離</h2><span class="rf-badge rf-g">可維護性</span></div>
+      <div class="rf-split">
+        <div class="rf-big"><b>CatchDAO</b><span>全部塞在一起<br>超過 1000 行</span></div>
+        <div class="rf-arrow">→</div>
+        <div class="rf-stack">
+          <div class="rf-layer"><b>CatchRepository</b><span>簡單查詢，交給框架</span></div>
+          <div class="rf-layer"><b>CatchRepositoryCustom</b><span>介面，定義複雜查詢</span></div>
+          <div class="rf-layer"><b>CatchRepositoryImpl</b><span>複雜查詢的實作</span></div>
+        </div>
+      </div>
+      <p class="rf-why">同樣的模式也套用在 <code>LpkFileRepository</code> → <code>LpkFileRepositoryCustom</code> → <code>LpkFileRepositoryCustomImpl</code>。</p>
+    </article>
+
+    <article class="rf-tile rf-s6">
+      <div class="rf-top"><div class="rf-num">4</div><h2>Projection / DTO</h2><span class="rf-badge rf-g">效能與安全</span></div>
+      <div class="rf-ba rf-row">
+        <div class="rf-box rf-o"><span class="rf-tag">舊</span><br><code>Transformers.aliasToBean(Entity.class)</code><p>一律用整個 Entity 承接查詢結果。</p></div>
+        <div class="rf-box rf-n"><span class="rf-tag">新</span><p>只取需要的欄位，用專用的資料載體：</p>
+          <div class="rf-chips"><code>TargetPsaDto</code><code>CampaignRedeemProjection</code><code>ContractProjection</code><code>MemberDataProjection</code><code>CouponDto</code><code>LogDbProjection</code></div></div>
+      </div>
+      <div class="rf-mini" style="margin-top:12px">
+        <div><b>減少連鎖影響</b>Entity 改欄位不波及查詢</div>
+        <div><b>不再靜默失敗</b>欄位對不上會明確出錯</div>
+        <div><b>防敏感外洩</b>只回傳該給的欄位</div>
+        <div><b>效能提升</b>少讀不需要的資料</div>
+      </div>
+      <div class="rf-n1"><b>避免 N+1 與延遲載入副作用：</b>若 Entity 有 <code>@OneToMany</code> 關聯（例如 <code>LPJ_FILE</code> 關聯 <code>LSM_FILE</code>），用 Entity 查詢時，只要程式不小心碰到關聯屬性，Hibernate 就會額外發出 SQL（N+1 問題）。Projection 是純資料載體，不會觸發任何延遲載入。</div>
+    </article>
+
+    <article class="rf-tile rf-s3">
+      <div class="rf-top"><div class="rf-num">5</div><h2>批量 / 條件式更新</h2><span class="rf-badge rf-g">效能</span></div>
+      <div class="rf-ba">
+        <div class="rf-box rf-o"><span class="rf-tag">舊</span><p>迴圈逐筆 <code>executeUpdate()</code>，例如 <code>BudgetDAO.saveBudget</code>。</p></div>
+        <div class="rf-box rf-n"><span class="rf-tag">新</span><p><code>@Modifying</code> 搭配 <code>CASE WHEN</code> 一次更新，例如 <code>ItRequestRepository.updateRejectStatus</code>：用單一 SQL 完成 3 種狀態的 reject。</p></div>
+      </div>
+    </article>
+
+    <article class="rf-tile rf-s3">
+      <div class="rf-top"><div class="rf-num">6</div><h2>動態排序</h2><span class="rf-badge">防 SQL 注入</span></div>
+      <div class="rf-ba">
+        <div class="rf-box rf-o"><span class="rf-tag">舊</span><br><code>"order by t1."+sSidx+" "+sSord</code><p>直接拼接，風險高，易被 SQL 注入。</p></div>
+        <div class="rf-box rf-n"><span class="rf-tag">新</span><br><code>CASE WHEN :sidx = 'xxx' THEN t1.xxx END</code><p>搭配參數綁定，例如 <code>AssetInventoryRepository.findInventoryOrderByDept</code>。</p></div>
+      </div>
+    </article>
+  </div>
+
+  <p class="rf-end">把複雜的企業流程，整理成可靠的系統。</p>
+
+      </div>
+    </section>
+
     <section class="section architecture-section" id="architecture">
       <div class="container">
-        <div class="section-heading"><div><p class="section-kicker">04 / ARCHITECTURE</p><h2>專案架構圖</h2></div><p>概念圖呈現梳理各模組責任與關係；實際部署拓樸依公司環境為準。</p></div>
+        <div class="section-heading"><div><p class="section-kicker">05 / ARCHITECTURE</p><h2>專案架構圖</h2></div><p>概念圖呈現梳理各模組責任與關係；實際部署拓樸依公司環境為準。</p></div>
         <div class="architecture-frame">
           <img src="assets/architecture.svg" alt="企業系統架構圖：使用者與前端經由 API Gateway 轉發至 Report、Surrounding、Permission、Member、Bonus 等業務模組，再連接 MySQL、既有系統與外部服務。">
           <div class="architecture-legend"><span><i class="legend-dot dot-blue"></i> API／路由層</span><span><i class="legend-dot dot-purple"></i> 業務模組</span><span><i class="legend-dot dot-green"></i> 資料與外部整合</span></div>
@@ -126,7 +217,7 @@
 
     <section class="section approach-section">
       <div class="container">
-        <p class="section-kicker">05 / ENGINEERING APPROACH</p><h2>我的工程工作方式</h2>
+        <p class="section-kicker">06 / ENGINEERING APPROACH</p><h2>我的工程工作方式</h2>
         <div class="approach-grid">
           <div><span>01</span><h3>先理解既有系統</h3><p>從 Controller、Service、SQL、資料表與呼叫關係建立完整資料流。</p></div>
           <div><span>02</span><h3>把責任切清楚</h3><p>區分路由、業務規則、資料存取與外部介接，降低修改風險。</p></div>
@@ -137,14 +228,14 @@
 
     <section class="section resume-section" id="resume">
       <div class="container resume-panel">
-        <div class="resume-copy"><p class="section-kicker">06 / RESUME</p><h2>讓履歷成為<br>下一次對話的起點。</h2><p>下載履歷摘要，快速了解我的 Java 後端、企業系統整合與既有系統現代化經驗。</p><div class="resume-actions"><a class="button button-light" href="resume/鍾昌興_Java後端工程師履歷.pdf" download>下載 PDF 履歷 <span>↓</span></a></div></div>
+        <div class="resume-copy"><p class="section-kicker">07 / RESUME</p><h2>讓履歷成為<br>下一次對話的起點。</h2><p>下載履歷摘要，快速了解我的 Java 後端、企業系統整合與既有系統現代化經驗。</p><div class="resume-actions"><a class="button button-light" href="resume/鍾昌興_Java後端工程師履歷.pdf" download>下載 PDF 履歷 <span>↓</span></a></div></div>
         <div class="resume-art"><div class="doc-sheet"><div class="doc-top"></div><div class="doc-name">鍾昌興</div><div class="doc-role">JAVA BACKEND ENGINEER</div><div class="doc-rule"></div><div class="doc-line long"></div><div class="doc-line"></div><div class="doc-line medium"></div><div class="doc-heading">PROJECT EXPERIENCE</div><div class="doc-line long"></div><div class="doc-line medium"></div><div class="doc-line long"></div><div class="doc-line short"></div><div class="doc-foot"><span>JAVA</span><span>SPRING</span><span>API</span></div></div></div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
-        <div><p class="section-kicker">07 / CONTACT</p><h2>一起把問題<br><span class="gradient-text">變成可交付的系統。</span></h2><p class="contact-intro">歡迎洽談 Java 後端開發、系統整合、舊系統現代化等相關機會。</p></div>
+        <div><p class="section-kicker">08 / CONTACT</p><h2>一起把問題<br><span class="gradient-text">變成可交付的系統。</span></h2><p class="contact-intro">歡迎洽談 Java 後端開發、系統整合、舊系統現代化等相關機會。</p></div>
         <div class="contact-card"><div class="contact-row"><span class="contact-icon">✉</span><div><small>EMAIL</small><strong>rd02navc2@gmail.com</strong></div></div><div class="contact-row"><span class="contact-icon">in</span><div><small>LINKEDIN</small><strong>www.linkedin.com/in/line0975818457</strong></div></div><div class="contact-row"><span class="contact-icon">⌘</span><div><small>GITHUB</small><strong>https://github.com/rd02navc2</strong></div></div></div>
       </div>
     </section>
