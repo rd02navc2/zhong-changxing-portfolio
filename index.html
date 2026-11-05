@@ -18,6 +18,18 @@
 
 .refactor-section{padding:72px 0}.refactor-section h2{color:var(--rf-ink)}.refactor-section .rf-lead{margin-top:8px}
   </style>
+
+    <style>
+      .hero-lead strong{font-weight:800}
+      .hero-positioning{margin:16px 0 0;font-size:14px;font-weight:700;letter-spacing:.02em}
+      .positioning-section{padding-top:32px}
+      .positioning-panel{display:grid;grid-template-columns:1fr 1fr;gap:36px;padding:36px;border:1px solid var(--line,#dbe3eb);border-radius:24px;background:linear-gradient(135deg,rgba(31,58,95,.07),rgba(23,113,77,.05))}
+      .positioning-panel h2{margin:8px 0 0;font-size:clamp(26px,4vw,42px);line-height:1.18}
+      .positioning-copy p{margin:0 0 20px;line-height:1.9}
+      .positioning-pills{display:flex;flex-wrap:wrap;gap:8px}
+      .positioning-pills span{padding:8px 12px;border:1px solid var(--line,#dbe3eb);border-radius:999px;font-size:12px;font-weight:700;background:rgba(255,255,255,.55)}
+      @media(max-width:760px){.positioning-panel{grid-template-columns:1fr;padding:24px;gap:20px}}
+    </style>
 </head>
 <body>
   <header class="site-header">
@@ -35,13 +47,14 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="pulse"></span> JAVA BACKEND · SYSTEM INTEGRATION</p>
-          <h1>把複雜的企業流程，<br><span class="gradient-text">整理成可靠的系統。</span></h1>
-          <p class="hero-lead">我是鍾昌興，專注 Java 後端開發、既有系統現代化與企業內部系統整合。從硬體研發到金融交易，再到零售營運系統，我重視系統穩定性、資料一致性與可維護性。</p>
+          <h1>資深 Java／IoT <br><span class="gradient-text">企業系統整合</span></h1>
+          <p class="hero-lead">協助企業處理<strong>企業設備、IoT 與既有資訊系統的整合與現代化</strong>，串接 IoT 通訊協定、Java 後端、ERP／POS／會員系統與雲端平台。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">探索專案 <span>↘</span></a>
             <a class="button button-secondary" href="resume/鍾昌興_Java後端工程師履歷.docx" download>下載履歷 <span>↓</span></a>
           </div>
-          <div class="hero-tags"><span>Java / Spring</span><span>API Integration</span><span>Legacy Modernization</span></div>
+          <div class="hero-tags"><span>Java / Spring</span><span>IoT Integration</span><span>API Integration</span><span>Legacy Modernization</span></div>
+          <p class="hero-positioning">企業設備、IoT 與既有資訊系統的整合與現代化</p>
         </div>
         <div class="hero-visual" aria-label="系統架構抽象圖">
           <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
@@ -70,6 +83,23 @@
       </div>
     </section>
 
+    <section class="section positioning-section">
+      <div class="container">
+        <div class="positioning-panel">
+          <div>
+            <p class="section-kicker">MARKET POSITIONING</p>
+            <h2>企業設備、IoT 與既有資訊系統的整合與現代化。</h2>
+          </div>
+          <div class="positioning-copy">
+            <p>不只提供單一 Java 程式開發，而是從設備資料、IoT 通訊、Java／Spring Boot 後端，到 ERP／MES／POS 與既有系統，協助企業打通資料與業務流程。</p>
+            <div class="positioning-pills">
+              <span>IoT → Java Backend</span><span>ERP／MES／POS Integration</span><span>Legacy Modernization</span><span>Enterprise API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section skills-section" id="skills">
       <div class="container">
         <div class="section-heading"><div><p class="section-kicker">02 / SKILLS</p><h2>技術能力</h2></div><p>以實際專案脈絡呈現技術，不以工具清單取代工程成果。</p></div>
@@ -78,8 +108,9 @@
           <article class="skill-card"><div class="skill-icon purple">02</div><h3>System Integration</h3><p>舊系統程式分析、SQL／資料流追蹤、ERP WebService、POS、會員點數及營運服務介接。</p><div class="skill-line"><span style="width:99%"></span></div><small>相容性維護 · 跨模組整合</small></article>
           <article class="skill-card"><div class="skill-icon green">03</div><h3>Gateway & Governance</h3><p>Spring Cloud Gateway、動態路由管理、IP 白名單、來源 IP 足跡及登入失敗紀錄。</p><div class="skill-line"><span style="width:99%"></span></div><small>路由管理 · 存取追蹤</small></article>
           <article class="skill-card"><div class="skill-icon orange">04</div><h3>Data & Business Workflow</h3><p>MySQL、SQL、交易管理、Excel 報表、資產盤點、預算檢核及審核流程。</p><div class="skill-line"><span style="width:99%"></span></div><small>資料一致性 · 業務規則</small></article>
+          <article class="skill-card"><div class="skill-icon">05</div><h3>IoT & Enterprise Integration</h3><p>MQTT、Modbus、OPC-UA、CAN-BUS、WebSocket 與 IoT 資料流整合，串接 Java 後端、ERP／MES／企業應用。</p><div class="skill-line"><span style="width:95%"></span></div><small>設備資料 · 協定整合 · 企業系統</small></article>
         </div>
-        <div class="tech-strip"><span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>Spring Cloud Gateway</span><span>JPA</span><span>MySQL</span><span>SQL</span><span>Maven</span><span>REST API</span><span>WebService</span><span>Excel Reports</span></div>
+        <div class="tech-strip"><span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>Spring Cloud Gateway</span><span>JPA</span><span>MySQL</span><span>SQL</span><span>Maven</span><span>REST API</span><span>WebService</span><span>MQTT</span><span>Modbus</span><span>OPC-UA</span><span>CAN-BUS</span><span>Excel Reports</span></div>
       </div>
     </section>
 
@@ -87,6 +118,22 @@
       <div class="container">
         <div class="section-heading"><div><p class="section-kicker">03 / SELECTED WORK</p><h2>專案作品</h2></div></div>
         <div class="project-list">
+          <article class="project-card">
+            <div class="project-number">PROJECT 05</div><div class="project-content">
+              <div class="project-title-row"><h3>Industrial IoT｜工業 4.0 即時資料平台</h3><span class="status">歷年實務經驗</span></div>
+              <p>曾建置 Industrial 4.0 IoT 即時資料平台，整合 MQTT、Modbus、OPC-UA、WebSocket 等多種協定，將設備資料導入企業應用。</p>
+              <ul><li>C++ 多執行緒設備通訊與 Python asyncio 非同步資料流</li><li>AWS Lambda／EventBridge／SQS／Step Functions 事件驅動架構</li><li>串接 MES／ERP，支援企業製造與營運資料整合</li></ul>
+              <div class="project-tags"><span>MQTT</span><span>Modbus</span><span>OPC-UA</span><span>AWS</span><span>MES／ERP</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">PROJECT 06</div><div class="project-content">
+              <div class="project-title-row"><h3>Connected Vehicle｜車聯網雲端平台</h3><span class="status">歷年實務經驗</span></div>
+              <p>曾參與雲端車聯網平台，處理車輛即時監控、軌跡回放與高頻 IoT 訊號，建立設備資料到雲端應用的整合能力。</p>
+              <ul><li>MQTT／CAN-BUS 與 C++ 高頻訊號處理</li><li>Node.js、MongoDB、GeoJSON 空間資料與軌跡分析</li><li>React／React Native 即時監控與視覺化</li></ul>
+              <div class="project-tags"><span>MQTT</span><span>CAN-BUS</span><span>C++</span><span>Node.js</span><span>MongoDB</span></div>
+            </div>
+          </article>
           <article class="project-card project-featured">
             <div class="project-number">PROJECT 01</div><div class="project-content">
               <div class="project-title-row"><h3>API Gateway｜動態路由與 IP 管理</h3><span class="status status-local">本機功能驗證</span></div>
@@ -199,7 +246,7 @@
     </article>
   </div>
 
-  <p class="rf-end">把複雜的企業流程，整理成可靠的系統。</p>
+  <p class="rf-end">核心定位：企業設備、IoT 與既有資訊系統的整合與現代化。以 Java／Spring Boot 為後端核心，串接設備資料、ERP／MES／POS 與企業應用。</p>
 
       </div>
     </section>
@@ -235,7 +282,7 @@
 
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
-        <div><p class="section-kicker">08 / CONTACT</p><h2>一起把問題<br><span class="gradient-text">變成可交付的系統。</span></h2><p class="contact-intro">歡迎洽談 Java 後端開發、系統整合、舊系統現代化等相關機會。</p></div>
+        <div><p class="section-kicker">08 / CONTACT</p><h2>一起把問題<br><span class="gradient-text">變成可交付的系統。</span></h2><p class="contact-intro">歡迎洽談企業設備、IoT、Java 後端、ERP／MES／POS 整合，以及既有系統現代化等相關合作。</p></div>
         <div class="contact-card"><div class="contact-row"><span class="contact-icon">✉</span><div><small>EMAIL</small><strong>rd02navc2@gmail.com</strong></div></div><div class="contact-row"><span class="contact-icon">in</span><div><small>LINKEDIN</small><strong>www.linkedin.com/in/line0975818457</strong></div></div><div class="contact-row"><span class="contact-icon">⌘</span><div><small>GITHUB</small><strong>https://github.com/rd02navc2</strong></div></div></div>
       </div>
     </section>
